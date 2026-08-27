@@ -3,68 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RGMA | División Streamers y Creadores</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<title>RGMA | División Creadores de Contenido</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-  body{background:#0a0a0a;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
-  .popup-wrapper{
-    max-width:420px;width:100%;background:#111;border-radius:24px;
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+  body{background:#000;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:12px}
+  .popup{
+    width:100%;max-width:400px;background:#111;border-radius:20px;
     overflow:hidden;border:1px solid #222;
-    box-shadow:0 20px 60px rgba(0,0,0,0.6);
-    animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1);
   }
-  @keyframes popIn{0%{transform:scale(0.9) translateY(20px);opacity:0}100%{transform:scale(1) translateY(0);opacity:1}}
-  .popup-image{position:relative;width:100%;height:380px;overflow:hidden}
-  .popup-image img{width:100%;height:100%;object-fit:cover;object-position:top center}
-  .popup-badge{
-    position:absolute;top:16px;left:16px;background:#fff;color:#000;
-    font-size:11px;font-weight:800;padding:6px 10px;border-radius:100px;
-    letter-spacing:0.5px;display:flex;align-items:center;gap:6px
+  /* LOGO ARRIBA SOLO */
+  .popup-header{
+    background:#fff;padding:12px;display:flex;align-items:center;justify-content:center
   }
-  .popup-badge img{width:18px;height:18px;border-radius:50%;object-fit:cover}
-  .popup-content{padding:22px 20px 20px 20px}
-  .popup-content h2{font-size:26px;line-height:1.1;font-weight:800;margin-bottom:8px}
-  .popup-content p{font-size:14px;color:#a1a1a1;line-height:1.4;margin-bottom:18px}
-  .popup-content p strong{color:#fff;font-weight:600}
-  .benefits{display:flex;gap:8px;margin-bottom:18px}
-  .benefit{background:#1a1a1a;border:1px solid #262626;border-radius:10px;padding:8px 10px;flex:1;text-align:center}
-  .benefit b{display:block;font-size:13px;font-weight:700}
-  .benefit s{font-size:11px;color:#888;text-decoration:none}
-  .cta-btn{
-    width:100%;background:#fff;color:#000;border:none;
-    padding:14px;border-radius:12px;font-weight:800;font-size:15px;
-    cursor:pointer;transition:all 0.2s
-  }
-  .cta-btn:hover{transform:scale(1.02)}
-  .cta-sub{font-size:11px;color:#666;text-align:center;margin-top:10px}
-  .trust{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:12px;font-size:11px;color:#555}
+  .popup-header img{height:42px;width:auto;object-fit:contain}
+  /* FOTO COMPLETA SIN CORTAR */
+  .popup-img{width:100%;height: auto}
+  .popup-img img{width:100%;height:auto;display:block;object-fit:contain}
+  .popup-body{padding:18px}
+  .popup-body h2{color:#fff;font-size:22px;line-height:1.2;font-weight:800;margin-bottom:8px}
+  .popup-body p{color:#999;font-size:13px;line-height:1.4;margin-bottom:14px}
+  .popup-body p strong{color:#fff}
+  .tags{display:flex;gap:6px;margin-bottom:14px}
+  .tag{flex:1;background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:8px;text-align:center;color:#fff;font-size:12px;font-weight:700}
+  .tag span{color:#777;font-size:10px;display:block;font-weight:400}
+  .btn{width:100%;background:#fff;color:#000;border:0;padding:13px;border-radius:10px;font-weight:800;font-size:14px;cursor:pointer}
+  .small{color:#555;font-size:10px;text-align:center;margin-top:8px}
 </style>
 </head>
 <body>
 
-<div class="popup-wrapper">
-  <div class="popup-image">
-    <img src="foto-popup-creadores.webp" alt="RGMA División Streamers y Creadores">
-    <div class="popup-badge">
-      <img src="rgme-divisioncreadores-blanco.jpg" alt="RGMA Logo"> DIVISIÓN STREAMERS Y CREADORES - RGMA
-    </div>
+<div class="popup">
+  <div class="popup-header">
+    <img src="rgame-division-creadores.jpg" alt="RGMA División Creadores de Contenido">
   </div>
-  <div class="popup-content">
+  <div class="popup-img">
+    <img src="foto-popup-creadores.jpg" alt="Tu canal es 100% tuyo">
+  </div>
+  <div class="popup-body">
     <h2>¿Te llegó un contrato y no sabés si firmar?</h2>
-    <p>Tu canal es <strong>tu trabajo</strong>. Lo revisamos con vos, sin costo, para que <strong>siga siendo 100% tuyo</strong>.</p>
-    
-    <div class="benefits">
-      <div class="benefit"><b>✓ Gratis</b><s>Revisión</s></div>
-      <div class="benefit"><b>✓ 24hs</b><s>Respuesta</s></div>
-      <div class="benefit"><b>✓ 100%</b><s>Confidencial</s></div>
+    <p>Tu canal es <strong>tu trabajo</strong>. Lo revisamos con vos, sin costo, para que siga siendo 100% tuyo.</p>
+    <div class="tags">
+      <div class="tag">✓ Gratis<span>Revisión</span></div>
+      <div class="tag">✓ 24hs<span>Respuesta</span></div>
+      <div class="tag">✓ 100%<span>Confidencial</span></div>
     </div>
-
-    <button class="cta-btn" onclick="window.open('https://wa.me/549XXXXXXXXXX?text=Hola%20RGMA%2C%20soy%20creador%20y%20quiero%20que%20revisen%20mi%20contrato','_blank')">
-      Mandar mi contrato por WhatsApp →
-    </button>
-    <div class="cta-sub">Sin compromiso. Te decimos si te conviene o no en criollo.</div>
-    <div class="trust">🔒 RGMA | Más de 500 creadores protegidos</div>
+    <button class="btn" onclick="window.open('https://wa.me/549XXXXXXXXXX?text=Hola%20RGMA%20quiero%20revisar%20mi%20contrato','_blank')">Mandar mi contrato por WhatsApp →</button>
+    <div class="small">Sin compromiso. Te decimos si te conviene o no en criollo.</div>
   </div>
 </div>
 
